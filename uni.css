@@ -317,6 +317,18 @@ body{
   input[type=submit]:hover {
     background-color: #471112;
   }
-  
-  
-
+  .header{grid-area:head ;}
+  .navbar{grid-area: nav;}
+  .container{grid-area: main;}
+  .footer{grid-area: foot;}
+  .gridT{
+    display: grid;
+    grid-template-areas: 
+    'head head head'
+    'nav nav nav'
+    'main main main'
+    'main main main'
+    'foot foot foot';
+    background-color: white;
+    gap: 10px;
+  }
